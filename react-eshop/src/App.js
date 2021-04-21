@@ -85,7 +85,7 @@ function App() {
                         <ProductForm onNewProduct={onNewProductHandler}/>
                     </Route>
                     <Route path="/">
-                        {isPending && <h2>Čekejte, prosím, načítám data...</h2>}s
+                        {isPending && <h2>Čekejte, prosím, načítám data...</h2>}
                         {error && [<h2>Neočekávaná chyba spojení:</h2>, <span>{error}</span>]}
                         {!error && !isPending &&
                         <>
